@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import { SiCodeforces, SiLeetcode } from 'react-icons/si';
 
 const Hero = () => {
   // Variants for container animations
@@ -23,28 +24,38 @@ const Hero = () => {
       opacity: 1
     }
   };
-
+  
   const socialLinks = [
     {
+      icon: <SiCodeforces size={25} />,
+      url: "https://codeforces.com/profile/shiv13",
+      label: "CodeForces"
+    },
+    {
+      icon: <SiLeetcode size={25} />,
+      url: "https://leetcode.com/u/ssaraffa/",
+      label: "LeetCode"
+    },
+    {
       icon: <FaGithub size={25} />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/saraffa13",
       label: "GitHub"
     },
     {
       icon: <FaLinkedin size={25} />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/shivam-kumar-saraffa-66167a1b8/",
       label: "LinkedIn"
     },
     {
       icon: <FaTwitter size={25} />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/shivam13537194",
       label: "Twitter"
     },
     {
       icon: <FaEnvelope size={25} />,
-      url: "mailto:your.email@example.com",
+      url: "mailto:ssaraffa786@gmail.com",
       label: "Email"
-    }
+    },
   ];
 
   return (
@@ -77,7 +88,7 @@ const Hero = () => {
           >
             Hi, I'm{' '}
             <span className="relative">
-              <span className="text-accent">Your Name</span>
+              <span className="text-accent">Shivam</span>
               <span className="absolute bottom-0 left-0 w-full h-[2px] bg-accent/30"></span>
             </span>
           </motion.h1>

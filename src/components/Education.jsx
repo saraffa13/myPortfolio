@@ -5,43 +5,28 @@ import { FaGraduationCap } from 'react-icons/fa';
 const Education = () => {
   const educationData = [
     {
-      id: 1,
-      degree: "Master of Computer Science",
-      institution: "University Name",
-      duration: "2020 - 2022",
-      description: "Specialized in Artificial Intelligence and Machine Learning. Completed thesis on Deep Learning applications in Natural Language Processing.",
-      gpa: "3.8/4.0",
-      achievements: [
-        "Published 2 research papers",
-        "Teaching Assistant for Data Structures course",
-        "President of Computer Science Society"
-      ]
-    },
-    {
       id: 2,
       degree: "Bachelor of Technology",
-      institution: "University Name",
-      duration: "2016 - 2020",
-      description: "Major in Computer Science and Engineering with focus on software development and database management.",
-      gpa: "3.7/4.0",
-      achievements: [
-        "Dean's List all semesters",
-        "Won National Coding Championship",
-        "Led team of 5 for final year project"
-      ]
+      institution: "Nit Hamirpur",
+      duration: "2019 - 2023",
+      description: "Major in Mechanical Engineering.",
+      gpa: "8.66/10",
     },
     {
       id: 3,
-      degree: "High School Diploma",
-      institution: "School Name",
-      duration: "2014 - 2016",
-      description: "Science stream with Computer Science as elective.",
-      gpa: "95%",
-      achievements: [
-        "School topper in Computer Science",
-        "Science Club President",
-        "Won Inter-school Programming Contest"
-      ]
+      degree: "Higher Secondary( CBSE )",
+      institution: "St. Paul Public School",
+      duration: "2017 - 2019",
+      description: "Studied Physics, Chemistry, and Mathematics",
+      gpa: "88%",
+    },
+    {
+      id: 4,
+      degree: "High School( ICSE )",
+      institution: "Victoria Boys' School",
+      duration: "2010-2017",
+      description: "Studied Maths, Science, Social Studies, English, etc",
+      gpa: "94.2%",
     }
   ];
 
@@ -101,19 +86,7 @@ const Education = () => {
                       </span>
                     </div>
 
-                    {/* Achievements */}
-                    <div>
-                      <h4 className="text-accent font-semibold mb-2">
-                        Key Achievements:
-                      </h4>
-                      <ul className="list-disc list-inside text-textSecondary">
-                        {item.achievements.map((achievement, i) => (
-                          <li key={i} className="mb-1">
-                            {achievement}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>

@@ -1,13 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { 
-  FaEnvelope, 
-  FaPhone, 
-  FaMapMarkerAlt, 
-  FaGithub, 
-  FaLinkedin, 
-  FaTwitter 
-} from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -44,38 +38,26 @@ const Contact = () => {
     {
       icon: <FaEnvelope className="text-2xl" />,
       title: "Email",
-      content: "your.email@example.com",
-      link: "mailto:your.email@example.com"
+      content: "ssaraffa786@gmail.com",
+      link: "mailto:ssaraffa786@gmail.com"
     },
-    {
-      icon: <FaPhone className="text-2xl" />,
-      title: "Phone",
-      content: "+1 234 567 890",
-      link: "tel:+1234567890"
-    },
-    {
-      icon: <FaMapMarkerAlt className="text-2xl" />,
-      title: "Location",
-      content: "New York, NY, USA",
-      link: "https://maps.google.com"
-    }
   ];
 
   // Social links data
   const socialLinks = [
     {
       icon: <FaGithub />,
-      url: "https://github.com/yourusername",
+      url: "https://github.com/saraffa13",
       label: "GitHub"
     },
     {
       icon: <FaLinkedin />,
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/shivam-kumar-saraffa-66167a1b8/",
       label: "LinkedIn"
     },
     {
       icon: <FaTwitter />,
-      url: "https://twitter.com/yourusername",
+      url: "https://x.com/shivam13537194",
       label: "Twitter"
     }
   ];
@@ -87,17 +69,16 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
+
     try {
-      // Replace this with your actual form submission logic
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual EmailJS IDs
+      await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID');
       setSubmitStatus('success');
       setFormData({ name: '', email: '', subject: '', message: '' });
     } catch (error) {
       setSubmitStatus('error');
     }
-    
+
     setIsSubmitting(false);
     setTimeout(() => setSubmitStatus(null), 5000);
   };

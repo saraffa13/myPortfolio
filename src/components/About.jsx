@@ -52,13 +52,13 @@ const About = () => {
           
           <div className="space-y-6 text-textSecondary">
             <p>
-              👋 I'm a passionate Full Stack Developer with over 5 years of experience in building 
-              web and mobile applications. My journey in technology started when I wrote my first 
+              👋 I'm a passionate Full Stack Developer with over 1 years of experience in building 
+              web applications. My journey in technology started when I wrote my first 
               "Hello World" program, and I've been hooked ever since.
             </p>
             <p>
-              🎓 I hold a Master's degree in Computer Science and have worked with various 
-              startups and established companies, helping them build scalable solutions and 
+              🎓 I am a B.Tech graduate of Nit Hamirpur and have worked with various 
+              startups, helping them build scalable solutions and 
               deliver exceptional user experiences.
             </p>
             <p>
@@ -70,11 +70,11 @@ const About = () => {
           {/* Stats */}
           <div className="grid grid-cols-2 gap-8 max-w-lg mx-auto py-8">
             <div className="text-center p-6 bg-secondary rounded-lg hover:transform hover:scale-105 transition-all duration-300">
-              <h4 className="text-4xl font-bold text-accent mb-2">5+</h4>
+              <h4 className="text-4xl font-bold text-accent mb-2">1+</h4>
               <p className="text-textSecondary">Years Experience</p>
             </div>
             <div className="text-center p-6 bg-secondary rounded-lg hover:transform hover:scale-105 transition-all duration-300">
-              <h4 className="text-4xl font-bold text-accent mb-2">50+</h4>
+              <h4 className="text-4xl font-bold text-accent mb-2">15+</h4>
               <p className="text-textSecondary">Projects Completed</p>
             </div>
           </div>

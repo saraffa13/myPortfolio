@@ -18,7 +18,7 @@ const Navbar = () => {
     <nav className="fixed w-full h-20 shadow-xl bg-primary z-50">
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <a href="#home" className="text-2xl font-bold text-accent">
-          Portfolio
+          Shivam
         </a>
         
         {/* Desktop Menu */}
