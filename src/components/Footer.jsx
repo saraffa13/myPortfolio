@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Social Links */}
           <div className="flex space-x-6 mb-4">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/saraffa13"
               target="_blank"
               rel="noreferrer"
               className="text-textPrimary hover:text-accent transition-colors"
@@ -17,7 +17,7 @@ const Footer = () => {
               <FaGithub size={24} />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/shivam-kumar-saraffa-66167a1b8/"
               target="_blank"
               rel="noreferrer"
               className="text-textPrimary hover:text-accent transition-colors"
@@ -25,7 +25,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://x.com/shivam13537194"
               target="_blank"
               rel="noreferrer"
               className="text-textPrimary hover:text-accent transition-colors"
@@ -33,7 +33,7 @@ const Footer = () => {
               <FaTwitter size={24} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:ssaraffa786@gmail.com"
               className="text-textPrimary hover:text-accent transition-colors"
             >
               <FaEnvelope size={24} />

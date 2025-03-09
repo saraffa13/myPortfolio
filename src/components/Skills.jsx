@@ -128,27 +128,7 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Skills */}
-        <motion.div 
-          variants={itemVariants}
-          className="mt-16 text-center"
-        >
-          <h3 className="text-2xl font-semibold text-textPrimary mb-8">Other Skills</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              "RESTful APIs", "Agile",
-              "Responsive Design", "Performance Optimization",
-            ].map((skill, index) => (
-              <span
-                key={index}
-                className="px-4 py-2 bg-secondary rounded-full text-textSecondary hover:text-accent 
-                  hover:bg-secondary/70 transition-all duration-300 cursor-default"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </motion.div>
+        
 
       </motion.div>
     </section>

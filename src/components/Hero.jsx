@@ -68,14 +68,6 @@ const Hero = () => {
           animate="visible"
           className="relative z-10"
         >
-          {/* Small introduction */}
-          <motion.p 
-            variants={itemVariants}
-            className="text-sm md:text-base tracking-[0.2em] text-accent mb-6 font-mono"
-          >
-            👋 WELCOME TO MY PORTFOLIO
-          </motion.p>
-
           {/* Main title */}
           <motion.h1 
             variants={itemVariants}
@@ -106,7 +98,6 @@ const Hero = () => {
             intersection of design and technology.
           </motion.p>
 
-          {/* CTA Buttons */}
           <motion.div 
             variants={itemVariants}
             className="flex items-center justify-center gap-4 mb-8"
@@ -130,7 +121,7 @@ const Hero = () => {
           {/* Social Links */}
           <motion.div 
             variants={itemVariants}
-            className="flex items-center justify-center gap-6"
+            className="flex items-center justify-center gap-6 mt-16"
           >
             {socialLinks.map((social, index) => (
               <a
@@ -142,7 +133,7 @@ const Hero = () => {
                 className="group relative p-3 bg-secondary rounded-full hover:bg-accent/10 
                   transition-all duration-300 transform hover:scale-110"
               >
-                <span className="text-textSecondary group-hover:text-accent transition-colors duration-300">
+                <span className="text-textSecondary group-hover:text-accent transition-colors duration-300 mt-24">
                   {social.icon}
                 </span>
                 {/* Tooltip */}

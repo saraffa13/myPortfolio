@@ -174,7 +174,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-secondary rounded-lg border border-gray-700 
                       focus:outline-none focus:border-accent text-textPrimary"
-                    placeholder="John Doe"
+                    placeholder="Enter your Name"
                   />
                 </div>
                 <div>
@@ -188,7 +188,7 @@ const Contact = () => {
                     required
                     className="w-full px-4 py-3 bg-secondary rounded-lg border border-gray-700 
                       focus:outline-none focus:border-accent text-textPrimary"
-                    placeholder="john@example.com"
+                    placeholder="Enter your Mail Id"
                   />
                 </div>
               </div>
@@ -204,7 +204,6 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-3 bg-secondary rounded-lg border border-gray-700 
                     focus:outline-none focus:border-accent text-textPrimary"
-                  placeholder="Project Inquiry"
                 />
               </div>
 
