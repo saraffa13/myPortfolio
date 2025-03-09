@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
+    user_name: '',
+    user_email: '',
     subject: '',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState(null);
 
-  // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -70,12 +69,20 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    console.log('Sending form data:', formData);
+
     try {
-      // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual EmailJS IDs
-      await emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID');
+      const response = await emailjs.send(
+        'service_3xvbysq', 
+        'template_rfldj03', 
+        formData, 
+        'user_3R5vG5rxL2OzaaIU75Dwl'
+      );
+      console.log('EmailJS response:', response);
       setSubmitStatus('success');
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ user_name: '', user_email: '', subject: '', message: '' });
     } catch (error) {
+      console.error('EmailJS error:', error);
       setSubmitStatus('error');
     }
 
@@ -99,11 +106,6 @@ const Contact = () => {
         {/* Section Header */}
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl font-bold text-textPrimary mb-4">Get In Touch</h2>
-          <div className="w-16 h-1 bg-accent mx-auto rounded mb-4"></div>
-          <p className="text-textSecondary max-w-2xl mx-auto">
-            Have a question or want to work together? Feel free to reach out to me using the form below 
-            or through any of my social media channels.
-          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -162,12 +164,12 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
-                  <label htmlFor="name" className="block text-textSecondary mb-2">Your Name</label>
+                  <label htmlFor="user_name" className="block text-textSecondary mb-2">Your Name</label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
+                    id="user_name"
+                    name="user_name"
+                    value={formData.user_name}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-secondary rounded-lg border border-gray-700 
@@ -176,12 +178,12 @@ const Contact = () => {
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-textSecondary mb-2">Your Email</label>
+                  <label htmlFor="user_email" className="block text-textSecondary mb-2">Your Email</label>
                   <input
                     type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
+                    id="user_email"
+                    name="user_email"
+                    value={formData.user_email}
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 bg-secondary rounded-lg border border-gray-700 

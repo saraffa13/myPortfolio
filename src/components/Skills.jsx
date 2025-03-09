@@ -92,10 +92,6 @@ const Skills = () => {
         <motion.div variants={itemVariants} className="text-center mb-16">
           <h2 className="text-4xl font-bold text-textPrimary mb-4">Technical Skills</h2>
           <div className="w-16 h-1 bg-accent mx-auto rounded mb-4"></div>
-          <p className="text-textSecondary max-w-2xl mx-auto">
-            I specialize in full-stack development with expertise in modern web technologies. 
-            Here's a comprehensive overview of my technical skills and proficiency levels.
-          </p>
         </motion.div>
 
         {/* Skills Grid */}

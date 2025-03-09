@@ -51,11 +51,6 @@ const Hero = () => {
       url: "https://x.com/shivam13537194",
       label: "Twitter"
     },
-    {
-      icon: <FaEnvelope size={25} />,
-      url: "mailto:ssaraffa786@gmail.com",
-      label: "Email"
-    },
   ];
 
   return (
@@ -108,8 +103,7 @@ const Hero = () => {
             className="text-textSecondary max-w-[600px] mx-auto mb-8 leading-relaxed"
           >
             I'm passionate about building exceptional digital experiences that live at the 
-            intersection of design and technology. Specializing in creating robust and 
-            scalable web applications with modern technologies.
+            intersection of design and technology.
           </motion.p>
 
           {/* CTA Buttons */}
