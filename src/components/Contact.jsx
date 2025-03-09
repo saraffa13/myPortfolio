@@ -73,10 +73,10 @@ const Contact = () => {
 
     try {
       const response = await emailjs.send(
-        'service_3xvbysq', 
-        'template_rfldj03', 
+        process.env.REACT_APP_SERVICE_ID, 
+        process.env.REACT_APP_TEMPLATE_ID,
         formData, 
-        'user_3R5vG5rxL2OzaaIU75Dwl'
+        process.env.REACT_APP_USER_ID
       );
       console.log('EmailJS response:', response);
       setSubmitStatus('success');
