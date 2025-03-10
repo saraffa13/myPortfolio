@@ -94,7 +94,7 @@ const Hero = () => {
             variants={itemVariants}
             className="text-textSecondary max-w-[600px] mx-auto mb-8 leading-relaxed"
           >
-            I'm passionate about building exceptional digital experiences that live at the 
+            I am a graduate of <strong>Nit Hamirpur</strong> and I'm passionate about building <strong>exceptional digital experiences</strong> that live at the 
             intersection of design and technology.
           </motion.p>
 
