@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { SiCodeforces, SiLeetcode } from 'react-icons/si';
 

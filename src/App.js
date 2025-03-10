@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import Projects from './components/Project';
 import Footer from './components/Footer';
 import Education from './components/Education';
-import About from './components/About';
 import Contact from './components/Contact';
 import Skills from './components/Skills';
 
