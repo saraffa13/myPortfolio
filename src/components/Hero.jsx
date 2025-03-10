@@ -11,20 +11,19 @@ const Hero = () => {
       opacity: 1,
       transition: {
         delayChildren: 0.3,
-        staggerChildren: 0.2
+        staggerChildren: 0.05
       }
     }
   };
 
-  // Variants for child animations
   const itemVariants = {
-    hidden: { y: 20, opacity: 0 },
+    hidden: { x: -50, opacity: 0 },
     visible: {
-      y: 0,
+      x: 0,
       opacity: 1
     }
   };
-  
+
   const socialLinks = [
     {
       icon: <SiCodeforces size={25} />,
@@ -89,12 +88,28 @@ const Hero = () => {
             <span className="text-accent animate-pulse">_</span>
           </motion.h2>
 
+          {/* Highlighted Line with Word Animation */}
+          <motion.div
+            variants={containerVariants}
+            className="text-2xl font-semibold text-accent flex justify-center"
+          >
+            {["I", "am", "a", "graduate", "of", "Nit", "Hamirpur"].map((word, index) => (
+              <motion.span
+                key={index}
+                variants={itemVariants}
+                className="mr-1"
+              >
+                {word}
+              </motion.span>
+            ))}
+          </motion.div>
+
           {/* Description */}
           <motion.p 
             variants={itemVariants}
             className="text-textSecondary max-w-[600px] mx-auto mb-8 leading-relaxed"
           >
-            I am a graduate of <strong>Nit Hamirpur</strong> and I'm passionate about building <strong>exceptional digital experiences</strong> that live at the 
+            I'm passionate about building <strong>exceptional digital experiences</strong> that live at the 
             intersection of design and technology.
           </motion.p>
 
