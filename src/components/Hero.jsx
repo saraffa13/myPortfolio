@@ -93,7 +93,7 @@ const Hero = () => {
             variants={containerVariants}
             className="text-2xl font-semibold text-accent flex justify-center"
           >
-            {["I", "am", "a", "graduate", "of", "Nit", "Hamirpur"].map((word, index) => (
+            {["I", "am", "a", "graduate", "of", "Nit", "Hamirpur.",].map((word, index) => (
               <motion.span
                 key={index}
                 variants={itemVariants}
@@ -107,7 +107,7 @@ const Hero = () => {
           {/* Description */}
           <motion.p 
             variants={itemVariants}
-            className="text-textSecondary max-w-[600px] mx-auto mb-8 leading-relaxed"
+            className="text-textSecondary max-w-[600px] mx-auto mb-8 mt-8 leading-relaxed"
           >
             I'm passionate about building <strong>exceptional digital experiences</strong> that live at the 
             intersection of design and technology.
