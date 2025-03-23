@@ -99,6 +99,8 @@ const Hero = () => {
                 variants={itemVariants}
                 className="mr-1"
               >
+
+                
                 {word}
               </motion.span>
             ))}
