@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      
       <Hero />
       <Projects />
       <Skills />
